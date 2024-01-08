@@ -1,0 +1,20 @@
+
+ion-list{
+    padding: 12px 0 12px 24px;
+
+    max-height: 550px;
+    overflow: auto;
+
+    ion-label{
+        display: flex;
+        justify-content: space-between;
+
+        h2{
+            font-weight: bold;
+        }
+
+        p{
+            color: var(--ion-color-primary);
+        }
+    }
+}

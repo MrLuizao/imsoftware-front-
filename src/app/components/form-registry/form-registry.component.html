@@ -1,0 +1,19 @@
+
+<ion-grid>
+
+  <ion-item>
+    <ion-label color="primary">
+      <h1>Registro de usuarios</h1>
+    </ion-label>
+  </ion-item>
+
+  <form [formGroup]="formUser" (ngSubmit)="submitUser()">
+    <ion-list lines="none">
+        <ion-input label="Nombre" label-placement="floating" fill="outline" color="secondary" formControlName="name"></ion-input>
+        <ion-input label="Edad" label-placement="floating" fill="outline" color="secondary" formControlName="age"></ion-input>
+        <ion-input label="Correo electrónico" label-placement="floating" fill="outline" color="secondary" formControlName="mail"></ion-input>
+        <ion-button shape="round" color="primary" [disabled]="!formUser.valid" type="submit">Guardar datos</ion-button>
+    </ion-list>
+  </form>
+
+</ion-grid>
